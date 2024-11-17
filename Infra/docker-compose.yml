@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql_server
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y" # Required to accept the SQL Server license terms
+      SA_PASSWORD: "Aa@123456" # Set a strong password for the SA user
+    volumes:
+      - sql_data:/var/opt/mssql # Persistent storage for your database files
+    restart: always
+
+volumes:
+  sql_data:
