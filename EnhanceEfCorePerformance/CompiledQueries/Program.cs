@@ -18,7 +18,6 @@ public class Program
     {
         // Executes the benchmarks specified in the CompiledQuery class.
         // BenchmarkRunner is a BenchmarkDotNet utility for running benchmarks and generating results.
-        //var cq = new CompiledQuery();
         BenchmarkRunner.Run<CompiledQuery>();
     }
 }
