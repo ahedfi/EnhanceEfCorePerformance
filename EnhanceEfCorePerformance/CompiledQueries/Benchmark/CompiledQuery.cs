@@ -24,7 +24,7 @@ public class CompiledQuery
     /// A compiled query that retrieves blogs with a specific rating.
     /// This leverages EF Core's compiled query feature for faster execution by pre-compiling the query.
     /// </summary>
-    private static readonly Func<BloggingDbContext, int, IEnumerable<Blog>> GetHighestRatedBlog =
+    private static readonly Func<BloggingDbContext, int, IEnumerable<Blog>> GetHighestRatedBlogs =
         EF.CompileQuery((BloggingDbContext context, int maxRating) =>
             context.Blogs
                    .Where(b => b.Rating == maxRating) // Filter blogs with the max rating.
@@ -103,6 +103,6 @@ public class CompiledQuery
         var dbContext = scope.ServiceProvider.GetRequiredService<BloggingDbContext>();
 
         // Execute the precompiled query to retrieve blogs with the maximum rating.
-        var result = GetHighestRatedBlog(dbContext, _maxRating);
+        var result = GetHighestRatedBlogs(dbContext, _maxRating);
     }
 }
