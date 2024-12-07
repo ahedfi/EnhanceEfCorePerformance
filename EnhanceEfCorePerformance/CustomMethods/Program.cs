@@ -51,6 +51,9 @@ internal class Program
         // that cannot be translated to SQL.
         // repository.FilterBlogsUsingCustomMethod("EF CORE");
 
+        // Filters blogs using client-side evaluation with a custom method.
+        repository.FilterBlogsUsingClientSideEvaluation("EF CORE");
+
         // Use an expression tree to filter blogs by keyword. Executes on the database server.
         repository.FilterBlogsUsingExpressionTree("EF CORE");
 

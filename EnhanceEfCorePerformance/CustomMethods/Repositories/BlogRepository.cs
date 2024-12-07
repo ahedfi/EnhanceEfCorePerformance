@@ -38,6 +38,30 @@ public class BlogRepository
     }
 
     /// <summary>
+    /// Filters blogs using client-side evaluation with a custom method.
+    /// This approach retrieves all blogs from the database and performs filtering in memory.
+    /// </summary>
+    /// <param name="keyword">The keyword to search for in the blog names.</param>
+    /// <returns>
+    /// A collection of blogs that contain the specified keyword in their names.
+    /// Filtering is case-insensitive and performed in memory.
+    /// </returns>
+    /// <remarks>
+    /// This method uses client-side evaluation, which can be inefficient for large datasets 
+    /// because all records are loaded into memory before filtering. 
+    /// It is recommended to use server-side filtering whenever possible.
+    /// </remarks>
+    public IEnumerable<Blog> FilterBlogsUsingClientSideEvaluation(string keyword)
+    {
+        // Fetches all blogs from the database and converts them to an in-memory collection.
+        // AsEnumerable transitions the query from an IQueryable (deferred execution) to an IEnumerable (immediate execution).
+        return _dbContext.Blogs
+            .AsEnumerable()
+            .Where(blog => ContainsKeyword(blog.Name, keyword)) // Invokes the custom ContainsKeyword method for filtering.
+            .ToList(); // Materializes the filtered results as a list.
+    }
+
+    /// <summary>
     /// Filters blogs using a dynamically generated expression tree for keyword matching.
     /// The filtering is translatable to SQL and executed on the database server.
     /// </summary>
