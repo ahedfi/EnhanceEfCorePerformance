@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projection", "Projection\Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoTracking", "NoTracking\NoTracking.csproj", "{5B947E1D-3ECF-4826-97EB-267DC8CF9B7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomMethods", "CustomMethods\CustomMethods.csproj", "{4369480D-F14B-4798-98DF-E8DDAF5B73BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5B947E1D-3ECF-4826-97EB-267DC8CF9B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B947E1D-3ECF-4826-97EB-267DC8CF9B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B947E1D-3ECF-4826-97EB-267DC8CF9B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4369480D-F14B-4798-98DF-E8DDAF5B73BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4369480D-F14B-4798-98DF-E8DDAF5B73BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4369480D-F14B-4798-98DF-E8DDAF5B73BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4369480D-F14B-4798-98DF-E8DDAF5B73BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
