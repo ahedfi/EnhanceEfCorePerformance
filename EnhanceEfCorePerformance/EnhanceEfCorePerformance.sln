@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoTracking", "NoTracking\No
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomMethods", "CustomMethods\CustomMethods.csproj", "{4369480D-F14B-4798-98DF-E8DDAF5B73BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caching", "Caching\Caching.csproj", "{A8CFA6FF-6A0F-42E9-86A6-689AFC9A4CC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{4369480D-F14B-4798-98DF-E8DDAF5B73BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4369480D-F14B-4798-98DF-E8DDAF5B73BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4369480D-F14B-4798-98DF-E8DDAF5B73BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CFA6FF-6A0F-42E9-86A6-689AFC9A4CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CFA6FF-6A0F-42E9-86A6-689AFC9A4CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CFA6FF-6A0F-42E9-86A6-689AFC9A4CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CFA6FF-6A0F-42E9-86A6-689AFC9A4CC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
